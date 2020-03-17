@@ -20,6 +20,4 @@ public class MySQLConnectionTest {
 			e.printStackTrace();
 		}
 	}
-	
-	
 }

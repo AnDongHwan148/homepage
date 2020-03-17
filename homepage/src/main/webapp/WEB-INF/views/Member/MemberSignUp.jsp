@@ -17,13 +17,24 @@
 			<div class="signUp">
 				<ul>
 					<li>
+						<label>*</label>
+						<div>
+							<input type="text" placeholder="아이디" id="userId">
+						</div>
 					</li>
 					<li>
-					
+						<label>*</label>
+						<div>
+							<input type="password" placeholder="비밀번호" id="userPwd">
+						</div>
 					</li>
 				</ul>
 			</div>
 		</div>
 	</div>
+	
+	<script>
+		
+	</script>
 </body>
 </html>

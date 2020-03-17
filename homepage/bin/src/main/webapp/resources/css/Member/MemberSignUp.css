@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+.container {
+	width: 100%;
+}
+
+.contents {
+	margin: 0px auto;
+	width: 700px;
+}
+.logo {
+	height: 100px;
+}
+.logo > h1 {
+	text-align: center;
+	padding-top: 30px;
+	color: orange;
+	size: 40px;
+}
+.signUp {
+	width: 100%;
+	height: 170px;
+	border: 1px solid orange;
+}
+.signUp > ul {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+.signUp > ul > li{
+	width: 100%;
+	height: 50%;
+	list-style: none;
+	border-bottom: 1px solid orange;
+}
+.signUp > ul > li > label {
+
+	}
