@@ -20,7 +20,7 @@
 .signUp {
 	width: 100%;
 	height: 170px;
-	border: 1px solid orange;
+	
 }
 .signUp > ul {
 	height: 100%;
@@ -31,10 +31,10 @@
 	width: 100%;
 	height: 50%;
 	list-style: none;
-	border-bottom: 1px solid orange;
+	border: 1px solid orange;
 }
-.signUp > ul > li{
-	vertical-align: middle;
+.signUp > ul > li:nth-last-child(1){
+	border-top: none;
 }
 label {
 	color: red;
@@ -44,12 +44,15 @@ label {
 	text-align: center;
 	float: left;
 }
-.signUp > ul > li > div:nth-child(2) {
-	height:100%;
+.signUp > ul > li > p {
+	padding-left: 45px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 .signUp > ul > li > div:nth-child(2) > input[type="text"], input[type="password"] {
 	height: 50px;
+	width: 300px;
 	border: none;
 	padding-left: 7px;
-	margin-top: 20px;
+	margin-top: 10px;
 }
