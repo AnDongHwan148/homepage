@@ -10,7 +10,7 @@
 <body>
 	<div class="header">
 		<div class="head_div">
-			<h1>DongWhan Homepage</h1>
+			<p>DongWhan Homepage...</p>
 		</div>
 	</div>
 </body>

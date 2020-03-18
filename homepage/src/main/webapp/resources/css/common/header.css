@@ -9,11 +9,12 @@ head, body {
 	height: 150px;
 	background: orange;
 }
-.head_div > h1 {
+.head_div > p {
 	margin: 0;
 	color: white;
 	text-align: center;
 	padding-top: 44px;
+	font-size: 40px;
 }
 .head_div {
 	margin-left: auto;
