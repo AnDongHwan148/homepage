@@ -10,9 +10,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.4/semantic.min.js"></script>
 <link href="<%=request.getContextPath()%>/resources/css/Member/MemberSignUp.css"rel="stylesheet" type="text/css">
 <script src="resources/js/Member/MemberSignUp.js"></script>
+<script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 </head>
 <body>
 	<jsp:include page="../commons/header.jsp"/>
+	
 	<form action="">
 		<div class="container">
 			<div class="contents">
@@ -30,10 +32,10 @@
 					</ul>
 				</div>
 				<h3>이메일 인증</h3>
-				<div class="common email">
+				<div class="common email top">
 					<ul>
 						<li>
-							<div class="">
+							<div>
 								<i class="envelope outline icon"></i>
 								<div class="email_label">
 									<label>이메일 인증하기</label>
@@ -44,7 +46,7 @@
 					<br>
 					<ul hidden="true">
 						<li>
-							<div>
+							<div class="email_div">
 								<h4>이메일 인증</h4>
 								<div>
 									<div class="ui right labeled input">
@@ -62,14 +64,14 @@
 									</div>
 								</div>
 								<div>
-									<button class="ui orange button">인증번호 전송</button>
+									<input type='button' class="ui orange button" value="인증번호 전송" id="email_Send">
 								</div>
 							</div>
 						</li>
 					</ul>
 				</div>
 				<h3>주소 등록</h3>
-				<div class="common address">
+				<div class="common address top">
 					<ul>
 						<li>
 							<div class="">
@@ -80,9 +82,50 @@
 							</div>
 						</li>
 					</ul>
+					<br>
+					<ul hidden="true">
+						<li>
+							<div class="address_div">
+								<h4>주소 등록</h4>
+								<div>
+									<div>
+										<div class="ui input">
+											<input type="text" id="address_1" placeholder="우편번호" readonly="readonly">
+											<input type="button" class="ui orange button" id="addressBtn" value="주소검색">
+										</div>
+									</div>
+									<div>
+										<div class="ui input">
+											<input type="text" placeholder="주소" id="address_2" readonly="readonly">
+										</div>
+									</div>
+									<div>
+										<div class="ui input">
+											<input type="text" placeholder="상세 주소" id="address_3">
+											<input type="text" placeholder="참고 사항" id="address_4">
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<h3>기본 정보 입력</h3>
+				<ul>
+					<li>
+						<div class="email_label">
+							<label>성별 선택</label>
+							<label><input type="radio" name="gender_ch" value="M">남</label>
+							<label><input type="radio" name="gender_ch" value="F">여</label>
+						</div>
+					</li>
+				</ul>
+				<div class="ok_Btn">
+					<button class="ui orange button">완료</button>
 				</div>
 			</div>
 		</div>
+		
 	</form>
 </body>
 </html>
